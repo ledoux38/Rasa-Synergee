@@ -24,3 +24,5 @@ voir les possibilités de rasa
 
     - apprendre: ```rasa train```
 
+    - Lancer: ```rasa shell```
+
