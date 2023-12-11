@@ -1,0 +1,45 @@
+version: "3.1"
+intents:
+  - greet
+  - create_store
+  - provide_store_details
+  - goodbye
+
+entities:
+  - store_name
+  - store_location
+
+slots:
+  store_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: store_name
+
+  store_location:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: store_location
+
+responses:
+  utter_greet:
+    - text: "Bonjour! Comment puis-je vous aider?"
+
+  utter_ask_store_details:
+    - text: "Pouvez-vous me donner le nom et l'emplacement du magasin?"
+
+  utter_store_created_success:
+    - text: "Votre magasin a été créé avec succès."
+
+  utter_goodbye:
+    - text: "Au revoir et bonne continuation!"
+
+actions:
+  - utter_greet
+  - utter_ask_store_details
+  - utter_store_created_success
+  - utter_goodbye
+  - action_create_store

@@ -1,0 +1,10 @@
+CREATE CONTAINER:
+docker pull python:3.9
+docker run -it -p 5006:5006 --restart=always --name rasa-container -v $(pwd):/app python:3.9 bash
+apt-get update
+pip install rasa
+rasa init
+
+copier le contenu des differents fichier
+
+rasa train

@@ -1,0 +1,25 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Hello
+
+- intent: create_store
+  examples: |
+    - Je veux créer un nouveau magasin
+    - Comment puis-je ajouter un magasin ?
+    - Ajouter un magasin
+
+- intent: provide_store_details
+  examples: |
+    - Le magasin s'appelle [SuperStore](store_name) et se trouve à [Paris](store_location)
+    - Il est à [123 rue de la Liberté, Lille](store_location) et son nom est [Le magasin de tout](store_name)
+
+- intent: goodbye
+  examples: |
+    - Au revoir
+    - C'est tout pour aujourd'hui, merci
+    - Bye

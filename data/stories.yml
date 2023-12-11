@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories:
+- story: Création d'un magasin réussie
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: create_store
+  - action: utter_ask_store_details
+  - intent: provide_store_details
+  - action: action_create_store
+  - action: utter_store_created_success
+  - intent: goodbye
+  - action: utter_goodbye
