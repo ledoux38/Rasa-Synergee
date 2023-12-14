@@ -159,3 +159,23 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 /.rasa/
+
+# Fichiers de données sensibles
+config.yml
+credentials.yml
+endpoints.yml
+
+# Fichiers de cache et fichiers locaux temporaires
+.cache/
+.rasa/
+
+# Fichiers de logs
+logs/
+
+# Fichiers et dossiers spécifiques à l'OS
+.DS_Store
+Thumbs.db
+
+# Fichiers spécifiques à Rasa
+models/
+*.db
