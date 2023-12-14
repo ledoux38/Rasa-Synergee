@@ -9,16 +9,236 @@ version: "3.1"
 nlu:
 - intent: ask_for_help_on_store
   examples: |
-    - bonjour j'aimerai avoir de l'aide sur un magasin
-    - j'ai besoin d'aide avec un magasin
-    - pouvez-vous m'aider avec un magasin ?
+    - comment puis-je obtenir de l'aide pour un magasin ?
+    - besoin d'assistance pour mon magasin
+    - aidez-moi à gérer mon magasin s'il vous plaît
+    - que faire si j'ai un problème avec mon magasin ?
+    - je suis perdu avec la gestion de mon magasin
+    - assistance requise pour un magasin
+    - montrez-moi comment travailler avec un magasin sur votre plateforme
+    - expliquez-moi comment gérer un magasin ici
+    - je ne comprends pas comment gérer mon magasin
+    - des conseils pour gérer un magasin ?
+    - aidez-moi avec les détails de mon magasin
+    - comment modifier les informations de mon magasin ?
+    - pas sûr de comment utiliser les fonctionnalités du magasin
+    - où puis-je trouver de l'aide pour mon magasin ?
+    - des instructions pour gérer un magasin, s'il vous plaît
+    - je veux de l'aide pour configurer mon magasin
+    - assistance nécessaire pour un magasin spécifique
+    - comment accéder aux paramètres de mon magasin ?
+    - guidez-moi à travers la gestion de magasin
+    - un peu d'aide pour mon magasin, s'il vous plaît
+    - je ne sais pas comment gérer mon magasin sur votre site
+    - conseils pour gérer un magasin efficacement
+    - où trouver de l'aide pour la gestion de magasin ?
+    - comment naviguer dans la section magasin ?
+    - je rencontre des difficultés avec la gestion de magasin
+    - besoin d'informations sur la gestion de magasin
+    - pouvez-vous m'orienter sur la gestion de magasin ?
+    - comment gérer mon magasin plus efficacement ?
+    - j'ai des questions sur la gestion de magasin
+    - guide pour la gestion d'un magasin
+    - aide pour les débutants dans la gestion de magasin
+    - tutoriel pour la gestion de magasin
+    - aide étape par étape pour la gestion de magasin
+    - comment puis-je gérer mon magasin plus facilement ?
+    - je cherche de l'aide pour mon magasin
+    - conseils pour une meilleure gestion de magasin
+    - je suis nouveau, comment gérer un magasin ?
+    - je voudrais de l'aide pour mon magasin
+    - orientez-moi sur la gestion de mon magasin
+    - comment effectuer des changements dans mon magasin ?
+    - j'ai besoin d'une assistance détaillée pour mon magasin
+    - je veux comprendre comment gérer mon magasin
+    - quelles sont les étapes pour gérer un magasin ?
+    - aide pour la gestion quotidienne de magasin
+    - je suis confus sur la gestion de magasin, aidez-moi
+    - manuel pour la gestion de magasin
+    - guide utilisateur pour la gestion de magasin
+    - instructions pour la gestion de mon magasin
+    - aide pratique pour la gestion de magasin
+    - conseils pratiques pour gérer un magasin
+    - support pour la gestion de mon magasin
+    - guide rapide pour la gestion de magasin
+    - besoin de directives pour gérer mon magasin
+    - comment simplifier la gestion de mon magasin ?
+    - je voudrais des conseils sur la gestion de magasin
+    - je lutte avec la gestion de mon magasin
+    - pourriez-vous m'aider avec la gestion de mon magasin ?
+    - comment puis-je améliorer la gestion de mon magasin ?
+    - assistance pour les opérations de magasin
+    - comment gérer mon magasin de manière efficace ?
+    - besoins d'assistance pour la gestion de magasin
+    - guide complet pour la gestion de magasin
+    - je cherche de l'aide pour la gestion de mon magasin
+    - comment gérer correctement mon magasin ?
+    - je veux de l'aide pour optimiser la gestion de mon magasin
+    - je suis nouveau ici, comment gérer un magasin ?
+    - quels sont les conseils pour une gestion efficace de magasin ?
+    - j'ai besoin d'aide pour comprendre la gestion de magasin
+    - des recommandations pour la gestion de magasin ?
+    - je cherche des astuces pour gérer un magasin
+    - je suis perdu dans la gestion de mon magasin, pouvez-vous aider ?
+    - comment être plus efficace dans la gestion de magasin ?
+    - je veux des conseils professionnels pour gérer mon magasin
+    - aidez-moi à améliorer la gestion de mon magasin
+    - je cherche de l'aide pour gérer efficacement mon magasin
+    - guide pour la gestion optimale de magasin
+    - comment gérer mon magasin plus stratégiquement ?
+    - je veux des idées pour améliorer la gestion de mon magasin
+    - des solutions pour la gestion facile de magasin
+    - je veux apprendre à mieux gérer mon magasin
+    - stratégies pour une gestion efficace de magasin
+    - je voudrais des conseils sur la gestion de magasin
+    - conseils pour une gestion de magasin sans stress
+    - je cherche des méthodes pour gérer mon magasin
+    - je suis à la recherche d'assistance pour la gestion de magasin
+    - comment puis-je gérer mon magasin plus intelligemment ?
+    - je veux des astuces pour une gestion de magasin facile
+    - j'ai besoin d'aide pour gérer mon magasin de manière optimale
+    - je cherche des conseils pour une meilleure gestion de magasin
 
 - intent: change_store_status
   examples: |
-    - comment changer de statut
-    - changer d'étape pour un magasin
+    - Je dois changer le statut de mon magasin
+    - Comment modifier l'étape de mon magasin ?
+    - Changer le statut actuel de mon magasin
+    - Passer mon magasin à une autre étape
+    - Modifier l'état de fonctionnement du magasin
+    - Je veux changer le statut de mon magasin
+    - Mettre à jour le statut de mon magasin
+    - Comment faire évoluer le statut de mon magasin ?
+    - Passer mon magasin en mode fermeture temporaire
+    - Changer le statut de mon magasin en rénovation
+    - Comment mettre mon magasin en mode agrandissement ?
+    - Je veux passer mon magasin en pré-ouverture
+    - Modifier l'étape actuelle de mon magasin
+    - Comment passer mon magasin en mode liquidation ?
+    - Changer l'état de mon magasin en travaux
+    - Je dois mettre à jour l'étape de mon magasin
+    - Passer mon magasin à l'étape suivante
+    - Comment changer le statut opérationnel de mon magasin ?
+    - Modifier le statut de mon magasin pour maintenance
+    - Changer le niveau de fonctionnement de mon magasin
+    - Actualiser le statut de mon magasin
+    - Comment changer l'état de mon magasin ?
+    - Mettre mon magasin en statut de fermeture
+    - Je veux changer l'étape de mon magasin en transfert
+    - Changer le statut de mon magasin en ouvert
+    - Comment passer mon magasin en statut fermé ?
+    - Modifier le statut de mon magasin en ouverture prochaine
+    - Je souhaite changer le statut de mon magasin en réouverture
+    - Mettre à jour l'étape de mon magasin en liquidation avant travaux
+    - Changer le statut de mon magasin en fermé pour travaux
+    - Comment faire passer mon magasin en statut actif ?
+    - Modifier le statut de mon magasin en inactif
+    - Passer le statut de mon magasin en rénovation complète
+    - Je dois changer l'étape de mon magasin en pré-fermeture
+    - Mettre à jour l'état de mon magasin en ouvert pour travaux
+    - Comment changer le statut de mon magasin en fermé temporairement ?
+    - Changer le statut de mon magasin en ouverture imminente
+    - Passer mon magasin au statut de fermeture définitive
+    - Je veux modifier le statut de mon magasin en préparation d'ouverture
+    - Mettre à jour le statut de mon magasin pour une réouverture après travaux
+    - Comment modifier l'état de mon magasin en préparation de fermeture ?
+    - Changer le statut de mon magasin en phase de liquidation
+    - Passer le statut de mon magasin en étape de finalisation
+    - Je veux changer l'étape de mon magasin en phase de démarrage
+    - Modifier l'état de mon magasin en phase de clôture
 
 - intent: add_store_event
   examples: |
-    - ajouter un événement pour un magasin
-    - je veux ajouter un événement à un magasin
+    - Comment puis-je programmer un événement pour mon magasin ?
+    - Ajouter un événement de fermeture temporaire à mon magasin
+    - Je souhaite créer un événement d'agrandissement pour un magasin
+    - Planifier un événement de transfert pour mon magasin
+    - Organiser un événement de liquidation avant travaux dans mon magasin
+    - Programmer un événement spécial pour mon magasin
+    - Comment créer un événement pour un magasin sur votre plateforme ?
+    - J'aimerais ajouter un événement de rénovation pour mon magasin
+    - Mettre en place un événement de fermeture définitive pour un magasin
+    - Planifier une ouverture prochaine en tant qu'événement pour mon magasin
+    - Ajouter un événement de vente spéciale dans mon magasin
+    - Comment programmer un événement de réouverture pour mon magasin ?
+    - Organiser un événement promotionnel pour mon magasin
+    - Je veux créer un événement pour une occasion spéciale dans mon magasin
+    - Planifier un événement de fermeture saisonnière pour mon magasin
+    - Ajouter un événement pour célébrer l'anniversaire de mon magasin
+    - Comment mettre en place un événement de liquidation totale pour mon magasin ?
+    - Programmer un événement pour le réaménagement de mon magasin
+    - Créer un événement pour la période de soldes dans mon magasin
+    - Je souhaite ajouter un événement pour une vente flash dans mon magasin
+    - Organiser un événement pour le lancement d'un nouveau produit dans mon magasin
+    - Ajouter un événement pour une journée portes ouvertes dans mon magasin
+    - Comment programmer un événement pour une démonstration de produit dans mon magasin ?
+    - Planifier un événement pour une offre spéciale de fidélité dans mon magasin
+    - Créer un événement pour une formation ou un atelier dans mon magasin
+    - Ajouter un événement pour une opération de charité organisée par mon magasin
+    - Organiser un événement pour une collaboration spéciale dans mon magasin
+    - Je veux créer un événement pour un partenariat avec une autre marque dans mon magasin
+    - Planifier un événement pour une exposition temporaire dans mon magasin
+    - Ajouter un événement pour une rencontre avec des clients VIP dans mon magasin
+    - Comment organiser un événement pour une séance de dédicaces dans mon magasin ?
+    - Programmer un événement pour une nocturne spéciale dans mon magasin
+    - Créer un événement pour une séance de photos dans mon magasin
+    - Ajouter un événement pour une célébration thématique dans mon magasin
+    - Organiser un événement pour une dégustation de produits dans mon magasin
+    - Planifier un événement pour une journée de remises spéciales dans mon magasin
+    - Comment ajouter un événement pour une série de conférences dans mon magasin ?
+    - Je veux créer un événement pour une collecte de fonds dans mon magasin
+    - Ajouter un événement pour une journée de sensibilisation dans mon magasin
+    - Organiser un événement pour une activité communautaire dans mon magasin
+    - Planifier un événement pour une opération de nettoyage dans mon magasin
+    - Créer un événement pour une campagne de recyclage dans mon magasin
+    - Ajouter un événement pour une initiative écologique dans mon magasin
+    - Comment programmer un événement pour une campagne de sensibilisation dans mon magasin ?
+    - Organiser un événement pour une exposition d'art dans mon magasin
+    - Je veux créer un événement pour une performance musicale dans mon magasin
+    - Planifier un événement pour une soirée à thème dans mon magasin
+    - Ajouter un événement pour une compétition ou un tournoi dans mon magasin
+    - Comment mettre en place un événement pour une vente aux enchères dans mon magasin ?
+    - Organiser un événement pour une séance de dégustation dans mon magasin
+    - Créer un événement pour une journée de sensibilisation à la santé dans mon magasin
+    - Ajouter un événement pour une opération de dons dans mon magasin
+    - Planifier un événement pour une collecte de vêtements dans mon magasin
+    - Je veux créer un événement pour une journée de formation du personnel dans mon magasin
+    - Comment organiser un événement pour une présentation de mode dans mon magasin ?
+    - Ajouter un événement pour une session de conseil en style dans mon magasin
+    - Programmer un événement pour une démonstration de cuisine dans mon magasin
+    - Organiser un événement pour une séance de conseil en décoration dans mon magasin
+    - Créer un événement pour une séance d'information sur les produits dans mon magasin
+    - Ajouter un événement pour une session de réseautage d'affaires dans mon magasin
+    - Planifier un événement pour une conférence sur un sujet d'actualité dans mon magasin
+    - Je veux créer un événement pour une rencontre avec un expert dans mon magasin
+    - Comment organiser un événement pour une séance de conseil en investissement dans mon magasin ?
+    - Ajouter un événement pour une présentation de technologie dans mon magasin
+    - Programmer un événement pour une démonstration de produits électroniques dans mon magasin
+    - Organiser un événement pour une séance de dégustation de vins dans mon magasin
+    - Créer un événement pour une séance de formation sur les produits de beauté dans mon magasin
+    - Ajouter un événement pour une présentation de livre dans mon magasin
+    - Planifier un événement pour une rencontre avec un auteur dans mon magasin
+    - Comment créer un événement pour une séance de dédicaces d'auteur dans mon magasin ?
+    - Je veux organiser un événement pour une journée d'activités familiales dans mon magasin
+    - Ajouter un événement pour une journée de jeux pour enfants dans mon magasin
+    - Programmer un événement pour une séance de yoga ou de méditation dans mon magasin
+    - Organiser un événement pour une session de fitness ou de bien-être dans mon magasin
+    - Créer un événement pour une journée de sensibilisation au bien-être mental dans mon magasin
+    - Ajouter un événement pour une séance de relaxation ou de spa dans mon magasin
+    - Planifier un événement pour une journée de soins personnels dans mon magasin
+    - Comment organiser un événement pour une journée de santé et de forme physique dans mon magasin ?
+    - Je veux créer un événement pour une séance de conseil en nutrition dans mon magasin
+    - Ajouter un événement pour une présentation de produits de santé dans mon magasin
+    - Programmer un événement pour une séance d'information sur la nutrition dans mon magasin
+    - Organiser un événement pour une démonstration de produits de soins de la peau dans mon magasin
+    - Créer un événement pour une journée de beauté et de soins dans mon magasin
+    - Ajouter un événement pour une séance de conseil en maquillage dans mon magasin
+    - Planifier un événement pour une séance de relooking dans mon magasin
+    - Comment mettre en place un événement pour une séance de coiffure ou de stylisme dans mon magasin ?
+    - Organiser un événement pour une journée de mode et de tendances dans mon magasin
+    - Je veux créer un événement pour une présentation de collection de mode dans mon magasin
+    - Ajouter un événement pour une séance de conseil en style vestimentaire dans mon magasin
+    - Programmer un événement pour une rencontre avec un styliste de mode dans mon magasin
+    - Organiser un événement pour une séance de conseil en accessoires de mode dans mon magasin
+    - Créer un événement pour une présentation de bijoux ou d'accessoires dans mon magasin
+    - Ajouter un événement pour une démonstration de produits de luxe dans mon magasin
