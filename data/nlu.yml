@@ -1,25 +1,17 @@
 version: "3.1"
-
 nlu:
-- intent: greet
+- intent: ask_for_help_on_store
   examples: |
-    - Bonjour
-    - Salut
-    - Hello
+    - bonjour j'aimerai avoir de l'aide sur un magasin
+    - j'ai besoin d'aide avec un magasin
+    - pouvez-vous m'aider avec un magasin ?
 
-- intent: create_store
+- intent: change_store_status
   examples: |
-    - Je veux créer un nouveau magasin
-    - Comment puis-je ajouter un magasin ?
-    - Ajouter un magasin
+    - comment changer de statut
+    - changer d'étape pour un magasin
 
-- intent: provide_store_details
+- intent: add_store_event
   examples: |
-    - Le magasin s'appelle [SuperStore](store_name) et se trouve à [Paris](store_location)
-    - Il est à [123 rue de la Liberté, Lille](store_location) et son nom est [Le magasin de tout](store_name)
-
-- intent: goodbye
-  examples: |
-    - Au revoir
-    - C'est tout pour aujourd'hui, merci
-    - Bye
+    - ajouter un événement pour un magasin
+    - je veux ajouter un événement à un magasin

@@ -1,14 +1,21 @@
 version: "3.1"
-
+#Les stories illustrent comment les conversations pourraient se dérouler.
 stories:
-- story: Création d'un magasin réussie
+- story: Demande d'aide sur un magasin
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: create_store
-  - action: utter_ask_store_details
-  - intent: provide_store_details
-  - action: action_create_store
-  - action: utter_store_created_success
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: ask_for_help_on_store
+  - action: utter_what_do_you_want_to_do
+  - intent: change_store_status
+  - action: utter_how_to_change_store_status
+  - intent: add_store_event
+  - action: utter_how_to_add_store_event
+
+- story: Changer de statut du magasin
+  steps:
+  - intent: change_store_status
+  - action: utter_how_to_change_store_status
+
+- story: Ajouter un événement au magasin
+  steps:
+  - intent: add_store_event
+  - action: utter_how_to_add_store_event

@@ -1,12 +1,8 @@
 version: "3.1"
+#Les rules permettent de définir un comportement de dialogue qui doit toujours se produire de la même manière.
 
 rules:
-  - rule: Saluer l'utilisateur
-    steps:
-      - intent: greet
-      - action: utter_greet
-
-  - rule: Dire au revoir à l'utilisateur
-    steps:
-      - intent: goodbye
-      - action: utter_goodbye
+- rule: Répondre à la demande d'aide sur un magasin
+  steps:
+  - intent: ask_for_help_on_store
+  - action: utter_what_do_you_want_to_do
