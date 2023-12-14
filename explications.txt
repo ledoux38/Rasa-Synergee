@@ -1,0 +1,38 @@
+1. domain.yml
+    Ce fichier est le cœur de votre projet Rasa. Il définit l'environnement dans lequel votre bot opère, incluant :
+
+        Intents : Les différentes intentions que votre bot peut reconnaître.
+        Entities : Les éléments d'information spécifiques que votre bot peut extraire des messages.
+        Slots : Les variables qui stockent les informations pour le suivi du contexte de la conversation.
+        Responses : Les messages que le bot peut envoyer en réponse.
+        Actions : Les actions que le bot peut exécuter, y compris les actions personnalisées.
+
+2. data/nlu.yml
+    Ce fichier contient les exemples d'entrées utilisateur que le modèle NLU (Natural Language Understanding)
+    utilisera pour apprendre à identifier les intents et les entities. Il comprend :
+
+        Exemples pour chaque Intent : Phrases ou questions que les utilisateurs peuvent poser.
+        Annotations pour les Entities : Si un intent inclut des entities, elles sont annotées ici.
+
+3. data/stories.yml
+    Ce fichier contient des "stories", qui sont des exemples de conversations.
+    Une story est une séquence d'intents et d'actions (y compris les réponses) qui montre comment une conversation pourrait se dérouler.
+    Les stories aident à entraîner le modèle de dialogue de Rasa.
+
+4. data/rules.yml
+    Les règles sont utilisées pour définir un comportement de dialogue qui doit toujours se produire de la même manière.
+    Par exemple, une règle peut spécifier que chaque fois que l'utilisateur salue le bot (intent greet),
+    le bot doit répondre par une salutation (action utter_greet).
+
+5. actions.py
+    Ce fichier est pour les actions personnalisées.
+    Il contient le code Python pour les actions qui ne peuvent pas être gérées par des réponses simples.
+    Par exemple, des actions qui font des requêtes API, des requêtes à une base de données, ou des calculs complexes.
+
+Conclusion:
+    Récapitulatif et Interaction entre les Fichiers
+
+            domain.yml : Définit ce que le bot peut comprendre et dire/faire.
+            data/nlu.yml : Apprend au bot à reconnaître les intentions et les entities à partir des messages des utilisateurs.
+            data/stories.yml et data/rules.yml : Enseignent au bot comment répondre et se comporter dans des conversations.
+            actions.py : Permet des réponses et des comportements plus complexes et dynamiques.

@@ -1,5 +1,7 @@
 version: "3.1"
-#Les rules permettent de définir un comportement de dialogue qui doit toujours se produire de la même manière.
+#Les règles sont utilisées pour définir un comportement de dialogue qui doit toujours se produire de la même manière.
+#Par exemple, une règle peut spécifier que chaque fois que l'utilisateur salue le bot (intent greet),
+#le bot doit répondre par une salutation (action utter_greet).
 
 rules:
 - rule: Répondre à la demande d'aide sur un magasin

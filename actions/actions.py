@@ -26,6 +26,11 @@
 #
 #         return []
 
+# EXPLICATIONS
+# Ce fichier est pour les actions personnalisées.
+# Il contient le code Python pour les actions qui ne peuvent pas être gérées par des réponses simples.
+# Par exemple, des actions qui font des requêtes API, des requêtes à une base de données, ou des calculs complexes.
+
 
 from typing import Any, Text, Dict, List
 

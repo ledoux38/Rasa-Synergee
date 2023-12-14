@@ -1,4 +1,11 @@
 version: "3.1"
+
+#Ce fichier contient les exemples d'entrées utilisateur que le modèle NLU (Natural Language Understanding)
+#utilisera pour apprendre à identifier les intents et les entities. Il comprend :
+#
+#    Exemples pour chaque Intent : Phrases ou questions que les utilisateurs peuvent poser.
+#    Annotations pour les Entities : Si un intent inclut des entities, elles sont annotées ici.
+
 nlu:
 - intent: ask_for_help_on_store
   examples: |

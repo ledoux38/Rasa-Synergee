@@ -1,4 +1,13 @@
 version: '3.1'
+#Ce fichier est le cœur du projet Rasa. Il définit l'environnement dans lequel votre bot opère, incluant :
+#
+#    Intents : Les différentes intentions que votre bot peut reconnaître.
+#    Entities : Les éléments d'information spécifiques que votre bot peut extraire des messages.
+#    Slots : Les variables qui stockent les informations pour le suivi du contexte de la conversation.
+#    Responses : Les messages que le bot peut envoyer en réponse.
+#    Actions : Les actions que le bot peut exécuter, y compris les actions personnalisées.
+
+
 intents:
   - ask_for_help_on_store
   - change_store_status

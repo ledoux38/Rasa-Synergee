@@ -1,5 +1,9 @@
 version: "3.1"
-#Les stories illustrent comment les conversations pourraient se dérouler.
+
+#Ce fichier contient des "stories", qui sont des exemples de conversations.
+#Une story est une séquence d'intents et d'actions (y compris les réponses) qui montre comment une conversation pourrait se dérouler.
+#Les stories aident à entraîner le modèle de dialogue de Rasa.
+
 stories:
 - story: Demande d'aide sur un magasin
   steps:
