@@ -18,6 +18,12 @@ voir les possibilités de rasa
 
 8- initialiser Rasa ```rasa init```
 
+# Test avec une interface
+1- en ligne de commande lancer rasa (env) ```run --enable-api --cors "*"```
+
+2- Ouvrir ```interface/index.html```
+
+3- Faire des tests :)
 
 # Ligne de commande utiles:
 1- Rasa:
