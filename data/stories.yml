@@ -23,3 +23,20 @@ stories:
   steps:
   - intent: add_store_event
   - action: utter_how_to_add_store_event
+
+#- story: Demande d'aide générale
+#  steps:
+#  - intent: ask_for_help
+#  - action: utter_ask_which_module
+#
+#- story: Aide sur un module spécifique
+#  steps:
+#  - intent: help_referentiel
+#  - action: utter_ask_referentiel_detail
+
+#- story: Aide sur un module spécifique
+#  steps:
+#  - intent: ask_for_help_on_module
+#  - slot_was_set:
+#    - module: "maintenance"
+#  - action: utter_help_with_maintenance

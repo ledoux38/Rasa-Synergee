@@ -8,3 +8,20 @@ rules:
   steps:
   - intent: ask_for_help_on_store
   - action: utter_what_do_you_want_to_do
+
+- rule: Saluer l'utilisateur au début de la conversation
+  steps:
+  - action: utter_welcome_message
+
+- rule: Réponse pour demande d'aide générale
+  steps:
+  - intent: ask_for_help
+  - action: utter_ask_which_module
+
+- rule: Aide sur un module spécifique
+  condition:
+  - slot_was_set:
+    - module: "maintenance"
+  steps:
+  - intent: ask_for_help_on_module
+  - action: utter_help_with_maintenance

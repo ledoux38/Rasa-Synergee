@@ -242,3 +242,57 @@ nlu:
     - Organiser un événement pour une séance de conseil en accessoires de mode dans mon magasin
     - Créer un événement pour une présentation de bijoux ou d'accessoires dans mon magasin
     - Ajouter un événement pour une démonstration de produits de luxe dans mon magasin
+
+- intent: ask_for_help
+  examples: |
+    - Bonjour, j'ai besoin d'aide.
+    - Pourriez-vous m'aider s'il vous plaît ?
+    - J'ai une question, pouvez-vous m'assister ?
+    - J'ai un problème et j'ai besoin d'aide.
+    - Salut, je suis un peu perdu, pouvez-vous m'aider ?
+    - J'ai besoin d'un coup de main avec votre logiciel.
+    - Comment puis-je obtenir de l'aide ici ?
+    - Je suis nouveau, pouvez-vous m'aider ?
+    - J'ai besoin d'informations supplémentaires, pouvez-vous m'aider ?
+    - J'ai quelques questions, pouvez-vous m'assister ?
+    - Est-ce que quelqu'un peut m'aider ?
+    - J'ai du mal à comprendre comment cela fonctionne, pouvez-vous m'aider ?
+    - Pouvez-vous m'aider à naviguer dans votre système ?
+    - Je requiers de l'assistance, s'il vous plaît.
+    - Besoin d'aide avec une fonctionnalité.
+    - Je suis coincé, pouvez-vous m'aider ?
+    - J'ai besoin d'aide pour comprendre quelque chose.
+    - Comment puis-je obtenir de l'aide sur cette plateforme ?
+    - J'ai besoin d'aide pour utiliser votre application.
+    - Pouvez-vous m'aider à résoudre un problème ?
+
+- intent: utter_ask_which_module
+  examples: |
+    - J'ai besoin d'aide sur le module maintenance
+    - Pourriez-vous m'aider avec le module projet ?
+    - Assistance requise pour le module référentiel
+    - Comment utiliser le module audit ?
+    - Besoin d'informations sur le module baux
+    - Comment accéder aux fonctionnalités du module référentiel ?
+    - Aide pour naviguer dans le module maintenance
+    - Expliquez-moi comment travailler avec le module projet
+    - Des directives pour le module audit, s'il vous plaît
+    - Comment puis-je gérer le module baux ?
+    - J'ai des questions sur le module référentiel
+    - Pouvez-vous me montrer comment utiliser le module maintenance ?
+    - Besoin d'assistance sur le module projet
+    - Comment effectuer des tâches dans le module audit ?
+    - Guide pour débuter avec le module baux
+    - Conseils d'utilisation pour le module référentiel
+    - Comment naviguer dans le module maintenance ?
+    - Assistance pour les fonctionnalités du module projet
+    - J'ai besoin d'aide pour comprendre le module audit
+    - Comment gérer les tâches dans le module baux ?
+
+- intent: ask_for_help_on_module
+  examples: |
+    - J'ai besoin d'aide avec le module [maintenance](module)
+    - Pouvez-vous m'aider avec le module [projet](module) ?
+    - Comment utiliser le module [référentiel](module) ?
+    - Aide pour le module [audit](module)
+    - Des informations sur le module [baux](module), s'il vous plaît
