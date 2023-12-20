@@ -14,6 +14,12 @@ intents:
   - add_store_event
 
 responses:
+  utter_ask_specific_question:
+      - text: "Bien sûr, je suis là pour vous aider. Pouvez-vous me donner plus de détails ou me dire sur quel sujet spécifique vous avez une question ?"
+
+  utter_greet:
+    - text: "Bonjour, je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?"
+
   utter_welcome_message:
     - text: "Bonjour et bienvenue ! Comment puis-je vous aider aujourd'hui ?"
 

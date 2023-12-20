@@ -296,3 +296,58 @@ nlu:
     - Comment utiliser le module [référentiel](module) ?
     - Aide pour le module [audit](module)
     - Des informations sur le module [baux](module), s'il vous plaît
+
+- intent: ask_general_question
+  examples: |
+    - Pourriez-vous m'assister ?
+    - J'ai un problème
+    - Pouvez-vous m'offrir de l'assistance ?
+    - J'ai besoin d'un peu d'aide ici
+    - J'ai une requête
+    - J'aurais une question à poser
+    - Pouvez-vous me fournir des renseignements ?
+    - J'ai besoin de votre aide s'il vous plaît
+    - J'ai une interrogation
+    - J'ai besoin d'informations supplémentaires
+    - Pouvez-vous m'aider avec quelque chose ?
+    - J'ai besoin d'aide avec une tâche
+    - J'ai une préoccupation
+    - Pouvez-vous m'expliquer quelque chose ?
+    - J'ai un souci
+    - J'ai une petite question
+    - J'ai besoin de clarification
+    - J'ai une question à poser
+    - J'ai besoin de conseils
+    - Pouvez-vous me guider ?
+    - J'ai besoin d'explications
+    - J'ai une demande
+    - J'ai besoin d'informations sur un sujet
+    - Je me demande si vous pouvez m'aider
+    - J'ai un doute
+    - Pouvez-vous m'apporter de l'aide ?
+    - J'ai une enquête
+    - J'ai besoin d'un éclaircissement
+    - J'ai une question rapide
+    - J'ai besoin de détails
+    - Pouvez-vous me renseigner ?
+    - J'ai besoin de savoir quelque chose
+    - J'ai une question importante
+    - J'ai besoin d'aide pour comprendre quelque chose
+    - J'ai une curiosité
+    - J'ai besoin d'assistance pour une tâche
+    - Pouvez-vous m'aider rapidement ?
+    - J'ai une question technique
+    - J'ai besoin d'informations sur votre service
+    - J'ai une question sur un produit
+    - J'ai besoin d'aide pour résoudre un problème
+    - J'ai une question sur une fonctionnalité
+    - J'ai besoin de comprendre mieux quelque chose
+    - J'ai une question sur votre entreprise
+    - J'ai besoin d'aide pour utiliser votre produit
+    - J'ai une interrogation sur un service
+    - J'ai besoin d'aide avec votre application
+    - J'ai une question sur un processus
+    - J'ai besoin de savoir comment faire quelque chose
+    - J'ai une question sur une procédure
+    - J'ai besoin d'aide pour naviguer sur votre site
+

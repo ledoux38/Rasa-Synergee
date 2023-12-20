@@ -25,3 +25,14 @@ rules:
   steps:
   - intent: ask_for_help_on_module
   - action: utter_help_with_maintenance
+
+
+- rule: Saluer au début de la conversation
+  steps:
+  - action: utter_greet
+
+
+- rule: Réponse à une question générale
+  steps:
+  - intent: ask_general_question
+  - action: utter_ask_specific_question

@@ -5,6 +5,12 @@ version: "3.1"
 #Les stories aident à entraîner le modèle de dialogue de Rasa.
 
 stories:
+
+#- story: Réponse à une question générale
+#  steps:
+#  - intent: ask_general_question
+#  - action: utter_ask_specific_question
+
 - story: Demande d'aide sur un magasin
   steps:
   - intent: ask_for_help_on_store
