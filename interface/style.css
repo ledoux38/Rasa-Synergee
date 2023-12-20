@@ -16,6 +16,10 @@ body {
     background-color: #fafafa;
 }
 
+#action {
+display:flex
+}
+
 #chat-box {
     height: 400px;
     overflow-y: auto;

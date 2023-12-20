@@ -1,6 +1,15 @@
+document.getElementById("user-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Empêche le comportement par défaut de la touche Entrée
+        var userInput = document.getElementById("user-input").value;
+        document.getElementById("user-input").value = ""; // Efface le champ de saisie
+        sendMessage(userInput);
+    }
+});
+
 document.getElementById("send-button").addEventListener("click", function() {
     var userInput = document.getElementById("user-input").value;
-    document.getElementById("user-input").value = ""; // Clear input field
+    document.getElementById("user-input").value = ""; // Efface le champ de saisie
     sendMessage(userInput);
 });
 
