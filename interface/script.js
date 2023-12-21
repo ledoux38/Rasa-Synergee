@@ -22,11 +22,24 @@ function displayUserMessage(message) {
 }
 
 function displayBotMessage(message) {
+console.log(message)
     var chatBox = document.getElementById("chat-box");
-    var messageDiv = document.createElement("div");
-    messageDiv.textContent = "Bot: " + message;
-    messageDiv.classList.add("message", "bot-message");
-    chatBox.appendChild(messageDiv);
+
+    if (message.text) {
+        var textDiv = document.createElement("div");
+        textDiv.textContent = "Bot: " + message.text;
+        textDiv.classList.add("message", "bot-message");
+        chatBox.appendChild(textDiv);
+        console.log(chatBox);
+    }
+
+    if (message.image) {
+        var image = document.createElement("img");
+        image.src = message.image;
+        image.classList.add("message-image");
+        chatBox.appendChild(image);
+        console.log(chatBox);
+    }
 }
 
 function sendMessage(message) {
@@ -42,7 +55,7 @@ function sendMessage(message) {
     .then(response => response.json())
     .then(data => {
         data.forEach(messageData => {
-            displayBotMessage(messageData.text);
+            displayBotMessage(messageData);
         });
     })
     .catch(error => console.error('Error:', error));

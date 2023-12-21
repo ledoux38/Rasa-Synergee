@@ -24,6 +24,7 @@ stories:
   steps:
   - intent: change_store_status
   - action: utter_how_to_change_store_status
+  - action: utter_send_image
 
 - story: Ajouter un événement au magasin
   steps:
