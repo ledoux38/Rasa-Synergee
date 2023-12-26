@@ -12,6 +12,7 @@ intents:
   - ask_for_help_on_store
   - change_store_status
   - add_store_event
+  - ask_database_value
 
 responses:
   utter_ask_specific_question:
@@ -44,6 +45,12 @@ responses:
 
   utter_help_with_maintenance:
     - text: "Voici comment vous pouvez gérer le module maintenance..."
+
+
+  utter_action_write_to_database:
+    - text: "Aucun problème, je vais ajouter une valeur dans la base."
+
+
 
 actions:
   - utter_what_do_you_want_to_do

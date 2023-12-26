@@ -351,3 +351,6 @@ nlu:
     - J'ai une question sur une procédure
     - J'ai besoin d'aide pour naviguer sur votre site
 
+- intent: ask_database_value
+  examples: |
+    - ajoute moi une valeur dans la base

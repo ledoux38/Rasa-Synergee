@@ -31,6 +31,13 @@ stories:
   - intent: add_store_event
   - action: utter_how_to_add_store_event
 
+- story: Exemple d'utilisation de utter_action_write_to_database
+  steps:
+  - intent: ask_database_value
+  - action: utter_action_write_to_database
+
+
+
 #- story: Demande d'aide générale
 #  steps:
 #  - intent: ask_for_help

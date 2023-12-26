@@ -36,3 +36,10 @@ rules:
   steps:
   - intent: ask_general_question
   - action: utter_ask_specific_question
+
+
+- rule: Exemple de règle pour utter_action_write_to_database
+  steps:
+  - intent: ask_database_value
+  - action: utter_action_write_to_database
+

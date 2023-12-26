@@ -18,6 +18,14 @@ voir les possibilités de rasa
 
 8- initialiser Rasa ```rasa init```
 
+# Creation database de test
+1- cd database
+
+2- python create_database.py
+
+# Lancement du serveur pour les images:
+1- ```python -m http.server```
+
 # Test avec une interface
 1- en ligne de commande lancer rasa (env) ```rasa run --enable-api --cors "*"```
 
