@@ -38,6 +38,12 @@ stories:
   - action: action_add_to_database
 
 
+#- story: C'est quoi la QA?
+#  steps:
+#  - intent: ask_description_qa
+#  - action: utter_ask_qa
+
+
 #- story: Demande d'aide générale
 #  steps:
 #  - intent: ask_for_help

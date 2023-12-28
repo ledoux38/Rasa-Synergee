@@ -354,3 +354,12 @@ nlu:
 - intent: ask_database_value
   examples: |
     - ajoute moi une valeur dans la base
+    
+
+- intent: ask_description_qa
+  examples: |
+    - C'est quoi la QA?
+    - QA?
+    - Donne moi une description de la QA
+    - Donne moi une description de la phase QA
+    - C'est quoi une QA
