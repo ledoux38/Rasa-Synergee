@@ -42,4 +42,5 @@ rules:
   steps:
   - intent: ask_database_value
   - action: utter_action_write_to_database
+  - action: action_add_to_database
 
