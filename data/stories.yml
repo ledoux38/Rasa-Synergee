@@ -5,31 +5,17 @@ version: "3.1"
 #Les stories aident à entraîner le modèle de dialogue de Rasa.
 
 stories:
-
-#- story: Réponse à une question générale
-#  steps:
-#  - intent: ask_general_question
-#  - action: utter_ask_specific_question
-
-- story: Demande d'aide sur un magasin
+- story: Répondre avec le module et sous-module choisi
   steps:
-  - intent: ask_for_help_on_store
-  - action: utter_what_do_you_want_to_do
-  - intent: change_store_status
-  - action: utter_how_to_change_store_status
-  - intent: add_store_event
-  - action: utter_how_to_add_store_event
+  - intent: choose_module
+    entities:
+    - module: "nom_du_module"
+  - action: utter_confirm_select_module
+  - intent: choose_submodule
+    entities:
+    - submodule: "nom_du_sous_module"
+  - action: utter_show_chosen_module
 
-- story: Changer de statut du magasin
-  steps:
-  - intent: change_store_status
-  - action: utter_how_to_change_store_status
-  - action: utter_send_image
-
-- story: Ajouter un événement au magasin
-  steps:
-  - intent: add_store_event
-  - action: utter_how_to_add_store_event
 
 - story: Exemple d'utilisation de utter_action_write_to_database
   steps:

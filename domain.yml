@@ -6,45 +6,26 @@ version: '3.1'
 #    Slots : Les variables qui stockent les informations pour le suivi du contexte de la conversation.
 #    Responses : Les messages que le bot peut envoyer en réponse.
 #    Actions : Les actions que le bot peut exécuter, y compris les actions personnalisées.
+entities:
+  - module
+  - submodule
+
+
+
 
 
 intents:
-  - ask_for_help_on_store
-  - change_store_status
-  - add_store_event
   - ask_database_value
+  - choose_module
+  - choose_submodule
 
 responses:
-  utter_ask_specific_question:
-    - text: "Bien sûr, je suis là pour vous aider. Pouvez-vous me donner plus de détails ou me dire sur quel sujet spécifique vous avez une question ?"
-
-  utter_send_image:
-    - text: "Voici la procedure pour changer le statut d'un site"
-      image: "http://localhost:8000/images/qa.gif"
-
-  utter_greet:
-    - text: "Bonjour, je suis votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?"
-
-  utter_welcome_message:
-    - text: "Bonjour et bienvenue ! Comment puis-je vous aider aujourd'hui ?"
-
-  utter_what_do_you_want_to_do:
-    - text: "Voulez-vous faire des actions spécifiques comme changer d'étape, ajouter un événement, ou seulement modifier des informations sur la fiche du site ?"
-
-  utter_how_to_change_store_status:
-    - text: "Aller sur le bouton en haut à droite et sélectionner le nouveau statut voulu."
-
-  utter_how_to_add_store_event:
-    - text: "Aller sur le bouton en haut à droite et sélectionner l'événement voulu."
-
-  utter_ask_which_module:
-    - text: "Sur quel module avez-vous besoin d'aide ? (Référentiel, Maintenance, Projet, Audit, Baux, Projet)"
-
-  utter_ask_referentiel_detail:
-    - text: "De quel référentiel avez-vous besoin d'aide ? (Site, Candidat, Fournisseur, Prestataire technique, Candidat, Concurrent)"
-
-  utter_help_with_maintenance:
-    - text: "Voici comment vous pouvez gérer le module maintenance..."
+#  utter_choose_module:
+#    - text: "Quel module voulez-vous choisir?"
+  utter_confirm_select_module:
+    - text: "Vous avez choisi le module {module}. Quelle sous-partie souhaitez-vous approfondir ?"
+  utter_show_chosen_module:
+    - text: "Vous avez choisi le module {module} et la section {submodule}."
 
 
   utter_action_write_to_database:
@@ -69,4 +50,9 @@ slots:
       - type: from_entity
         entity: module
 
-
+  submodule:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: submodule

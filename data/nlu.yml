@@ -7,349 +7,436 @@ version: "3.1"
 #    Annotations pour les Entities : Si un intent inclut des entities, elles sont annotées ici.
 
 nlu:
-- intent: ask_for_help_on_store
+- intent: choose_module
   examples: |
-    - comment puis-je obtenir de l'aide pour un magasin ?
-    - besoin d'assistance pour mon magasin
-    - aidez-moi à gérer mon magasin s'il vous plaît
-    - que faire si j'ai un problème avec mon magasin ?
-    - je suis perdu avec la gestion de mon magasin
-    - assistance requise pour un magasin
-    - montrez-moi comment travailler avec un magasin sur votre plateforme
-    - expliquez-moi comment gérer un magasin ici
-    - je ne comprends pas comment gérer mon magasin
-    - des conseils pour gérer un magasin ?
-    - aidez-moi avec les détails de mon magasin
-    - comment modifier les informations de mon magasin ?
-    - pas sûr de comment utiliser les fonctionnalités du magasin
-    - où puis-je trouver de l'aide pour mon magasin ?
-    - des instructions pour gérer un magasin, s'il vous plaît
-    - je veux de l'aide pour configurer mon magasin
-    - assistance nécessaire pour un magasin spécifique
-    - comment accéder aux paramètres de mon magasin ?
-    - guidez-moi à travers la gestion de magasin
-    - un peu d'aide pour mon magasin, s'il vous plaît
-    - je ne sais pas comment gérer mon magasin sur votre site
-    - conseils pour gérer un magasin efficacement
-    - où trouver de l'aide pour la gestion de magasin ?
-    - comment naviguer dans la section magasin ?
-    - je rencontre des difficultés avec la gestion de magasin
-    - besoin d'informations sur la gestion de magasin
-    - pouvez-vous m'orienter sur la gestion de magasin ?
-    - comment gérer mon magasin plus efficacement ?
-    - j'ai des questions sur la gestion de magasin
-    - guide pour la gestion d'un magasin
-    - aide pour les débutants dans la gestion de magasin
-    - tutoriel pour la gestion de magasin
-    - aide étape par étape pour la gestion de magasin
-    - comment puis-je gérer mon magasin plus facilement ?
-    - je cherche de l'aide pour mon magasin
-    - conseils pour une meilleure gestion de magasin
-    - je suis nouveau, comment gérer un magasin ?
-    - je voudrais de l'aide pour mon magasin
-    - orientez-moi sur la gestion de mon magasin
-    - comment effectuer des changements dans mon magasin ?
-    - j'ai besoin d'une assistance détaillée pour mon magasin
-    - je veux comprendre comment gérer mon magasin
-    - quelles sont les étapes pour gérer un magasin ?
-    - aide pour la gestion quotidienne de magasin
-    - je suis confus sur la gestion de magasin, aidez-moi
-    - manuel pour la gestion de magasin
-    - guide utilisateur pour la gestion de magasin
-    - instructions pour la gestion de mon magasin
-    - aide pratique pour la gestion de magasin
-    - conseils pratiques pour gérer un magasin
-    - support pour la gestion de mon magasin
-    - guide rapide pour la gestion de magasin
-    - besoin de directives pour gérer mon magasin
-    - comment simplifier la gestion de mon magasin ?
-    - je voudrais des conseils sur la gestion de magasin
-    - je lutte avec la gestion de mon magasin
-    - pourriez-vous m'aider avec la gestion de mon magasin ?
-    - comment puis-je améliorer la gestion de mon magasin ?
-    - assistance pour les opérations de magasin
-    - comment gérer mon magasin de manière efficace ?
-    - besoins d'assistance pour la gestion de magasin
-    - guide complet pour la gestion de magasin
-    - je cherche de l'aide pour la gestion de mon magasin
-    - comment gérer correctement mon magasin ?
-    - je veux de l'aide pour optimiser la gestion de mon magasin
-    - je suis nouveau ici, comment gérer un magasin ?
-    - quels sont les conseils pour une gestion efficace de magasin ?
-    - j'ai besoin d'aide pour comprendre la gestion de magasin
-    - des recommandations pour la gestion de magasin ?
-    - je cherche des astuces pour gérer un magasin
-    - je suis perdu dans la gestion de mon magasin, pouvez-vous aider ?
-    - comment être plus efficace dans la gestion de magasin ?
-    - je veux des conseils professionnels pour gérer mon magasin
-    - aidez-moi à améliorer la gestion de mon magasin
-    - je cherche de l'aide pour gérer efficacement mon magasin
-    - guide pour la gestion optimale de magasin
-    - comment gérer mon magasin plus stratégiquement ?
-    - je veux des idées pour améliorer la gestion de mon magasin
-    - des solutions pour la gestion facile de magasin
-    - je veux apprendre à mieux gérer mon magasin
-    - stratégies pour une gestion efficace de magasin
-    - je voudrais des conseils sur la gestion de magasin
-    - conseils pour une gestion de magasin sans stress
-    - je cherche des méthodes pour gérer mon magasin
-    - je suis à la recherche d'assistance pour la gestion de magasin
-    - comment puis-je gérer mon magasin plus intelligemment ?
-    - je veux des astuces pour une gestion de magasin facile
-    - j'ai besoin d'aide pour gérer mon magasin de manière optimale
-    - je cherche des conseils pour une meilleure gestion de magasin
+    - Comment puis-je accéder aux détails du [Projet](module) en cours ?
+    - J'aurais besoin d'aide pour comprendre la structure du module [Projet](module).
+    - Peux-tu me montrer comment démarrer un nouveau [Projet](module) ?
+    - Comment puis-je voir l'avancement des [Projets](module) actuels ?
+    - J'ai une question concernant la gestion des ressources dans le module [Projet](module).
+    - Je cherche des informations sur les phases du [Projet](module).
+    - Peux-tu m'expliquer comment clôturer un [Projet](module) ?
+    - Comment intégrer des membres externes dans un [Projet](module) ?
+    - Je veux savoir comment affecter les tâches dans le module [Projet](module).
+    - Comment suivre le budget dans le module [Projet](module) ?
+    
+    - Comment puis-je consulter les [Baux](module) actifs ?
+    - J'aimerais en savoir plus sur la gestion des [Baux](module).
+    - Y a-t-il une procédure pour renouveler les [Baux](module) ?
+    - Comment suivre les paiements dans le module [Baux](module) ?
+    - Je cherche des informations sur les conditions des [Baux](module).
+    - Quelle est la méthode pour résilier un [Bail](module) ?
+    - Comment puis-je ajouter un nouveau [Bail](module) dans le système ?
+    - Je veux connaître les différents types de [Baux](module) disponibles.
+    - Comment suivre les problèmes liés aux [Baux](module) ?
+    - Y a-t-il une section pour les avis de fin de [Bail](module) ?
 
-- intent: change_store_status
-  examples: |
-    - Je dois changer le statut de mon magasin
-    - Comment modifier l'étape de mon magasin ?
-    - Changer le statut actuel de mon magasin
-    - Passer mon magasin à une autre étape
-    - Modifier l'état de fonctionnement du magasin
-    - Je veux changer le statut de mon magasin
-    - Mettre à jour le statut de mon magasin
-    - Comment faire évoluer le statut de mon magasin ?
-    - Passer mon magasin en mode fermeture temporaire
-    - Changer le statut de mon magasin en rénovation
-    - Comment mettre mon magasin en mode agrandissement ?
-    - Je veux passer mon magasin en pré-ouverture
-    - Modifier l'étape actuelle de mon magasin
-    - Comment passer mon magasin en mode liquidation ?
-    - Changer l'état de mon magasin en travaux
-    - Je dois mettre à jour l'étape de mon magasin
-    - Passer mon magasin à l'étape suivante
-    - Comment changer le statut opérationnel de mon magasin ?
-    - Modifier le statut de mon magasin pour maintenance
-    - Changer le niveau de fonctionnement de mon magasin
-    - Actualiser le statut de mon magasin
-    - Comment changer l'état de mon magasin ?
-    - Mettre mon magasin en statut de fermeture
-    - Je veux changer l'étape de mon magasin en transfert
-    - Changer le statut de mon magasin en ouvert
-    - Comment passer mon magasin en statut fermé ?
-    - Modifier le statut de mon magasin en ouverture prochaine
-    - Je souhaite changer le statut de mon magasin en réouverture
-    - Mettre à jour l'étape de mon magasin en liquidation avant travaux
-    - Changer le statut de mon magasin en fermé pour travaux
-    - Comment faire passer mon magasin en statut actif ?
-    - Modifier le statut de mon magasin en inactif
-    - Passer le statut de mon magasin en rénovation complète
-    - Je dois changer l'étape de mon magasin en pré-fermeture
-    - Mettre à jour l'état de mon magasin en ouvert pour travaux
-    - Comment changer le statut de mon magasin en fermé temporairement ?
-    - Changer le statut de mon magasin en ouverture imminente
-    - Passer mon magasin au statut de fermeture définitive
-    - Je veux modifier le statut de mon magasin en préparation d'ouverture
-    - Mettre à jour le statut de mon magasin pour une réouverture après travaux
-    - Comment modifier l'état de mon magasin en préparation de fermeture ?
-    - Changer le statut de mon magasin en phase de liquidation
-    - Passer le statut de mon magasin en étape de finalisation
-    - Je veux changer l'étape de mon magasin en phase de démarrage
-    - Modifier l'état de mon magasin en phase de clôture
+    - Comment signaler un problème de [Maintenance](module) ?
+    - J'aimerais voir le calendrier de [Maintenance](module).
+    - Existe-t-il une procédure standard pour les demandes de [Maintenance](module) ?
+    - Comment puis-je suivre l'état des travaux de [Maintenance](module) ?
+    - J'ai besoin de conseils sur la gestion des coûts de [Maintenance](module).
+    - Comment prioriser les tâches dans le module [Maintenance](module) ?
+    - Quels sont les indicateurs clés dans le module [Maintenance](module) ?
+    - Comment intégrer des fournisseurs dans le processus de [Maintenance](module) ?
+    - Y a-t-il des rapports de performance pour le module [Maintenance](module) ?
+    - Comment gérer les stocks de pièces pour la [Maintenance](module) ?
+    
+    - Comment accéder au [Référentiel](module) des données ?
+    - J'aimerais comprendre la structure du module [Référentiel](module).
+    - Existe-t-il une aide pour importer des données dans le [Référentiel](module) ?
+    - Comment garantir la sécurité des informations dans le [Référentiel](module) ?
+    - Je cherche des informations sur la gestion des versions dans le [Référentiel](module).
+    - Comment puis-je extraire des rapports du [Référentiel](module) ?
+    - Quelle est la procédure pour mettre à jour des données dans le [Référentiel](module) ?
+    - Comment puis-je organiser les données dans le [Référentiel](module) ?
+    - Y a-t-il une fonction de recherche avancée dans le [Référentiel](module) ?
+    - Comment gérer les accès utilisateurs au [Référentiel](module) ?
+    
+    - Comment démarrer un nouveau processus d'[Audit](module) ?
+    - J'aimerais voir l'historique des [Audit](module)s précédents.
+    - Existe-t-il un guide pour les étapes d'[Audit](module) ?
+    - Comment puis-je suivre les recommandations issues des [Audit](module)s ?
+    - Je cherche des informations sur les critères d'[Audit](module).
+    - Comment intégrer des parties externes dans un [Audit](module) ?
+    - Quels rapports puis-je générer à partir du module [Audit](module) ?
 
-- intent: add_store_event
+- intent: choose_submodule
   examples: |
-    - Comment puis-je programmer un événement pour mon magasin ?
-    - Ajouter un événement de fermeture temporaire à mon magasin
-    - Je souhaite créer un événement d'agrandissement pour un magasin
-    - Planifier un événement de transfert pour mon magasin
-    - Organiser un événement de liquidation avant travaux dans mon magasin
-    - Programmer un événement spécial pour mon magasin
-    - Comment créer un événement pour un magasin sur votre plateforme ?
-    - J'aimerais ajouter un événement de rénovation pour mon magasin
-    - Mettre en place un événement de fermeture définitive pour un magasin
-    - Planifier une ouverture prochaine en tant qu'événement pour mon magasin
-    - Ajouter un événement de vente spéciale dans mon magasin
-    - Comment programmer un événement de réouverture pour mon magasin ?
-    - Organiser un événement promotionnel pour mon magasin
-    - Je veux créer un événement pour une occasion spéciale dans mon magasin
-    - Planifier un événement de fermeture saisonnière pour mon magasin
-    - Ajouter un événement pour célébrer l'anniversaire de mon magasin
-    - Comment mettre en place un événement de liquidation totale pour mon magasin ?
-    - Programmer un événement pour le réaménagement de mon magasin
-    - Créer un événement pour la période de soldes dans mon magasin
-    - Je souhaite ajouter un événement pour une vente flash dans mon magasin
-    - Organiser un événement pour le lancement d'un nouveau produit dans mon magasin
-    - Ajouter un événement pour une journée portes ouvertes dans mon magasin
-    - Comment programmer un événement pour une démonstration de produit dans mon magasin ?
-    - Planifier un événement pour une offre spéciale de fidélité dans mon magasin
-    - Créer un événement pour une formation ou un atelier dans mon magasin
-    - Ajouter un événement pour une opération de charité organisée par mon magasin
-    - Organiser un événement pour une collaboration spéciale dans mon magasin
-    - Je veux créer un événement pour un partenariat avec une autre marque dans mon magasin
-    - Planifier un événement pour une exposition temporaire dans mon magasin
-    - Ajouter un événement pour une rencontre avec des clients VIP dans mon magasin
-    - Comment organiser un événement pour une séance de dédicaces dans mon magasin ?
-    - Programmer un événement pour une nocturne spéciale dans mon magasin
-    - Créer un événement pour une séance de photos dans mon magasin
-    - Ajouter un événement pour une célébration thématique dans mon magasin
-    - Organiser un événement pour une dégustation de produits dans mon magasin
-    - Planifier un événement pour une journée de remises spéciales dans mon magasin
-    - Comment ajouter un événement pour une série de conférences dans mon magasin ?
-    - Je veux créer un événement pour une collecte de fonds dans mon magasin
-    - Ajouter un événement pour une journée de sensibilisation dans mon magasin
-    - Organiser un événement pour une activité communautaire dans mon magasin
-    - Planifier un événement pour une opération de nettoyage dans mon magasin
-    - Créer un événement pour une campagne de recyclage dans mon magasin
-    - Ajouter un événement pour une initiative écologique dans mon magasin
-    - Comment programmer un événement pour une campagne de sensibilisation dans mon magasin ?
-    - Organiser un événement pour une exposition d'art dans mon magasin
-    - Je veux créer un événement pour une performance musicale dans mon magasin
-    - Planifier un événement pour une soirée à thème dans mon magasin
-    - Ajouter un événement pour une compétition ou un tournoi dans mon magasin
-    - Comment mettre en place un événement pour une vente aux enchères dans mon magasin ?
-    - Organiser un événement pour une séance de dégustation dans mon magasin
-    - Créer un événement pour une journée de sensibilisation à la santé dans mon magasin
-    - Ajouter un événement pour une opération de dons dans mon magasin
-    - Planifier un événement pour une collecte de vêtements dans mon magasin
-    - Je veux créer un événement pour une journée de formation du personnel dans mon magasin
-    - Comment organiser un événement pour une présentation de mode dans mon magasin ?
-    - Ajouter un événement pour une session de conseil en style dans mon magasin
-    - Programmer un événement pour une démonstration de cuisine dans mon magasin
-    - Organiser un événement pour une séance de conseil en décoration dans mon magasin
-    - Créer un événement pour une séance d'information sur les produits dans mon magasin
-    - Ajouter un événement pour une session de réseautage d'affaires dans mon magasin
-    - Planifier un événement pour une conférence sur un sujet d'actualité dans mon magasin
-    - Je veux créer un événement pour une rencontre avec un expert dans mon magasin
-    - Comment organiser un événement pour une séance de conseil en investissement dans mon magasin ?
-    - Ajouter un événement pour une présentation de technologie dans mon magasin
-    - Programmer un événement pour une démonstration de produits électroniques dans mon magasin
-    - Organiser un événement pour une séance de dégustation de vins dans mon magasin
-    - Créer un événement pour une séance de formation sur les produits de beauté dans mon magasin
-    - Ajouter un événement pour une présentation de livre dans mon magasin
-    - Planifier un événement pour une rencontre avec un auteur dans mon magasin
-    - Comment créer un événement pour une séance de dédicaces d'auteur dans mon magasin ?
-    - Je veux organiser un événement pour une journée d'activités familiales dans mon magasin
-    - Ajouter un événement pour une journée de jeux pour enfants dans mon magasin
-    - Programmer un événement pour une séance de yoga ou de méditation dans mon magasin
-    - Organiser un événement pour une session de fitness ou de bien-être dans mon magasin
-    - Créer un événement pour une journée de sensibilisation au bien-être mental dans mon magasin
-    - Ajouter un événement pour une séance de relaxation ou de spa dans mon magasin
-    - Planifier un événement pour une journée de soins personnels dans mon magasin
-    - Comment organiser un événement pour une journée de santé et de forme physique dans mon magasin ?
-    - Je veux créer un événement pour une séance de conseil en nutrition dans mon magasin
-    - Ajouter un événement pour une présentation de produits de santé dans mon magasin
-    - Programmer un événement pour une séance d'information sur la nutrition dans mon magasin
-    - Organiser un événement pour une démonstration de produits de soins de la peau dans mon magasin
-    - Créer un événement pour une journée de beauté et de soins dans mon magasin
-    - Ajouter un événement pour une séance de conseil en maquillage dans mon magasin
-    - Planifier un événement pour une séance de relooking dans mon magasin
-    - Comment mettre en place un événement pour une séance de coiffure ou de stylisme dans mon magasin ?
-    - Organiser un événement pour une journée de mode et de tendances dans mon magasin
-    - Je veux créer un événement pour une présentation de collection de mode dans mon magasin
-    - Ajouter un événement pour une séance de conseil en style vestimentaire dans mon magasin
-    - Programmer un événement pour une rencontre avec un styliste de mode dans mon magasin
-    - Organiser un événement pour une séance de conseil en accessoires de mode dans mon magasin
-    - Créer un événement pour une présentation de bijoux ou d'accessoires dans mon magasin
-    - Ajouter un événement pour une démonstration de produits de luxe dans mon magasin
+    - Comment puis-je suivre les [coûts](submodule) du Projet ?
+    - J'ai besoin d'assistance pour la [planification des ressources](submodule) dans le module Projet.
+    - Comment gérer les [risques associés](submodule) à un Projet spécifique ?
+    - J'aimerais savoir comment le [suivi des tâches](submodule) fonctionne dans le module Projet.
+    
+    - Comment puis-je gérer les [échéances](submodule) des Baux ?
+    - J'aimerais voir le [historique des paiements](submodule) pour un Bail spécifique.
+    - Comment puis-je gérer les [renouvellements](submodule) des Baux ?
+    - J'ai besoin d'informations sur la [résiliation](submodule) des Baux.
+    
+    - Comment prioriser les [demandes de réparation](submodule) dans le module Maintenance ?
+    - J'aimerais savoir comment [planifier des inspections régulières](submodule) dans le module Maintenance.
+    - Comment [gérer l'inventaire des pièces](submodule) pour la Maintenance ?
+    - J'ai besoin d'assistance pour le [suivi des coûts](submodule) de maintenance.
+    
+    - Comment puis-je [ajouter de nouvelles données](submodule) au Référentiel ?
+    - J'aimerais comprendre comment [gérer les permissions](submodule) dans le module Référentiel.
+    - Comment puis-je assurer la [sécurité des données](submodule) dans le Référentiel ?
+    - J'ai besoin de conseils sur la [sauvegarde et la restauration des données](submodule) dans le Référentiel.
+    
+    - Comment préparer les [documents](submodule) nécessaires pour un Audit ?
+    - J'aimerais savoir comment [suivre les actions correctives](submodule) après un Audit.
+    - Comment gérer le [planning des audits](submodule) dans le module Audit ?
+    - J'ai besoin d'assistance pour la [rédaction des rapports d'audit](submodule).
+    
+    - Comment puis-je gérer les [profils des Utilisateurs](submodule) ?
+    - J'aimerais savoir comment [suivre l'activité d'un Utilisateur](submodule).
+    - Comment gérer les [droits d'accès](submodule) pour les Utilisateurs ?
+    - J'ai besoin d'informations sur la [gestion des mots de passe](submodule) pour les Utilisateurs.
 
-- intent: ask_for_help
-  examples: |
-    - Bonjour, j'ai besoin d'aide.
-    - Pourriez-vous m'aider s'il vous plaît ?
-    - J'ai une question, pouvez-vous m'assister ?
-    - J'ai un problème et j'ai besoin d'aide.
-    - Salut, je suis un peu perdu, pouvez-vous m'aider ?
-    - J'ai besoin d'un coup de main avec votre logiciel.
-    - Comment puis-je obtenir de l'aide ici ?
-    - Je suis nouveau, pouvez-vous m'aider ?
-    - J'ai besoin d'informations supplémentaires, pouvez-vous m'aider ?
-    - J'ai quelques questions, pouvez-vous m'assister ?
-    - Est-ce que quelqu'un peut m'aider ?
-    - J'ai du mal à comprendre comment cela fonctionne, pouvez-vous m'aider ?
-    - Pouvez-vous m'aider à naviguer dans votre système ?
-    - Je requiers de l'assistance, s'il vous plaît.
-    - Besoin d'aide avec une fonctionnalité.
-    - Je suis coincé, pouvez-vous m'aider ?
-    - J'ai besoin d'aide pour comprendre quelque chose.
-    - Comment puis-je obtenir de l'aide sur cette plateforme ?
-    - J'ai besoin d'aide pour utiliser votre application.
-    - Pouvez-vous m'aider à résoudre un problème ?
 
-- intent: utter_ask_which_module
-  examples: |
-    - J'ai besoin d'aide sur le module maintenance
-    - Pourriez-vous m'aider avec le module projet ?
-    - Assistance requise pour le module référentiel
-    - Comment utiliser le module audit ?
-    - Besoin d'informations sur le module baux
-    - Comment accéder aux fonctionnalités du module référentiel ?
-    - Aide pour naviguer dans le module maintenance
-    - Expliquez-moi comment travailler avec le module projet
-    - Des directives pour le module audit, s'il vous plaît
-    - Comment puis-je gérer le module baux ?
-    - J'ai des questions sur le module référentiel
-    - Pouvez-vous me montrer comment utiliser le module maintenance ?
-    - Besoin d'assistance sur le module projet
-    - Comment effectuer des tâches dans le module audit ?
-    - Guide pour débuter avec le module baux
-    - Conseils d'utilisation pour le module référentiel
-    - Comment naviguer dans le module maintenance ?
-    - Assistance pour les fonctionnalités du module projet
-    - J'ai besoin d'aide pour comprendre le module audit
-    - Comment gérer les tâches dans le module baux ?
-
-- intent: ask_for_help_on_module
-  examples: |
-    - J'ai besoin d'aide avec le module [maintenance](module)
-    - Pouvez-vous m'aider avec le module [projet](module) ?
-    - Comment utiliser le module [référentiel](module) ?
-    - Aide pour le module [audit](module)
-    - Des informations sur le module [baux](module), s'il vous plaît
-
-- intent: ask_general_question
-  examples: |
-    - Pourriez-vous m'assister ?
-    - J'ai un problème
-    - Pouvez-vous m'offrir de l'assistance ?
-    - J'ai besoin d'un peu d'aide ici
-    - J'ai une requête
-    - J'aurais une question à poser
-    - Pouvez-vous me fournir des renseignements ?
-    - J'ai besoin de votre aide s'il vous plaît
-    - J'ai une interrogation
-    - J'ai besoin d'informations supplémentaires
-    - Pouvez-vous m'aider avec quelque chose ?
-    - J'ai besoin d'aide avec une tâche
-    - J'ai une préoccupation
-    - Pouvez-vous m'expliquer quelque chose ?
-    - J'ai un souci
-    - J'ai une petite question
-    - J'ai besoin de clarification
-    - J'ai une question à poser
-    - J'ai besoin de conseils
-    - Pouvez-vous me guider ?
-    - J'ai besoin d'explications
-    - J'ai une demande
-    - J'ai besoin d'informations sur un sujet
-    - Je me demande si vous pouvez m'aider
-    - J'ai un doute
-    - Pouvez-vous m'apporter de l'aide ?
-    - J'ai une enquête
-    - J'ai besoin d'un éclaircissement
-    - J'ai une question rapide
-    - J'ai besoin de détails
-    - Pouvez-vous me renseigner ?
-    - J'ai besoin de savoir quelque chose
-    - J'ai une question importante
-    - J'ai besoin d'aide pour comprendre quelque chose
-    - J'ai une curiosité
-    - J'ai besoin d'assistance pour une tâche
-    - Pouvez-vous m'aider rapidement ?
-    - J'ai une question technique
-    - J'ai besoin d'informations sur votre service
-    - J'ai une question sur un produit
-    - J'ai besoin d'aide pour résoudre un problème
-    - J'ai une question sur une fonctionnalité
-    - J'ai besoin de comprendre mieux quelque chose
-    - J'ai une question sur votre entreprise
-    - J'ai besoin d'aide pour utiliser votre produit
-    - J'ai une interrogation sur un service
-    - J'ai besoin d'aide avec votre application
-    - J'ai une question sur un processus
-    - J'ai besoin de savoir comment faire quelque chose
-    - J'ai une question sur une procédure
-    - J'ai besoin d'aide pour naviguer sur votre site
+#
+#- intent: ask_for_help_on_store
+#  examples: |
+#    - comment puis-je obtenir de l'aide pour un magasin ?
+#    - besoin d'assistance pour mon magasin
+#    - aidez-moi à gérer mon magasin s'il vous plaît
+#    - que faire si j'ai un problème avec mon magasin ?
+#    - je suis perdu avec la gestion de mon magasin
+#    - assistance requise pour un magasin
+#    - montrez-moi comment travailler avec un magasin sur votre plateforme
+#    - expliquez-moi comment gérer un magasin ici
+#    - je ne comprends pas comment gérer mon magasin
+#    - des conseils pour gérer un magasin ?
+#    - aidez-moi avec les détails de mon magasin
+#    - comment modifier les informations de mon magasin ?
+#    - pas sûr de comment utiliser les fonctionnalités du magasin
+#    - où puis-je trouver de l'aide pour mon magasin ?
+#    - des instructions pour gérer un magasin, s'il vous plaît
+#    - je veux de l'aide pour configurer mon magasin
+#    - assistance nécessaire pour un magasin spécifique
+#    - comment accéder aux paramètres de mon magasin ?
+#    - guidez-moi à travers la gestion de magasin
+#    - un peu d'aide pour mon magasin, s'il vous plaît
+#    - je ne sais pas comment gérer mon magasin sur votre site
+#    - conseils pour gérer un magasin efficacement
+#    - où trouver de l'aide pour la gestion de magasin ?
+#    - comment naviguer dans la section magasin ?
+#    - je rencontre des difficultés avec la gestion de magasin
+#    - besoin d'informations sur la gestion de magasin
+#    - pouvez-vous m'orienter sur la gestion de magasin ?
+#    - comment gérer mon magasin plus efficacement ?
+#    - j'ai des questions sur la gestion de magasin
+#    - guide pour la gestion d'un magasin
+#    - aide pour les débutants dans la gestion de magasin
+#    - tutoriel pour la gestion de magasin
+#    - aide étape par étape pour la gestion de magasin
+#    - comment puis-je gérer mon magasin plus facilement ?
+#    - je cherche de l'aide pour mon magasin
+#    - conseils pour une meilleure gestion de magasin
+#    - je suis nouveau, comment gérer un magasin ?
+#    - je voudrais de l'aide pour mon magasin
+#    - orientez-moi sur la gestion de mon magasin
+#    - comment effectuer des changements dans mon magasin ?
+#    - j'ai besoin d'une assistance détaillée pour mon magasin
+#    - je veux comprendre comment gérer mon magasin
+#    - quelles sont les étapes pour gérer un magasin ?
+#    - aide pour la gestion quotidienne de magasin
+#    - je suis confus sur la gestion de magasin, aidez-moi
+#    - manuel pour la gestion de magasin
+#    - guide utilisateur pour la gestion de magasin
+#    - instructions pour la gestion de mon magasin
+#    - aide pratique pour la gestion de magasin
+#    - conseils pratiques pour gérer un magasin
+#    - support pour la gestion de mon magasin
+#    - guide rapide pour la gestion de magasin
+#    - besoin de directives pour gérer mon magasin
+#    - comment simplifier la gestion de mon magasin ?
+#    - je voudrais des conseils sur la gestion de magasin
+#    - je lutte avec la gestion de mon magasin
+#    - pourriez-vous m'aider avec la gestion de mon magasin ?
+#    - comment puis-je améliorer la gestion de mon magasin ?
+#    - assistance pour les opérations de magasin
+#    - comment gérer mon magasin de manière efficace ?
+#    - besoins d'assistance pour la gestion de magasin
+#    - guide complet pour la gestion de magasin
+#    - je cherche de l'aide pour la gestion de mon magasin
+#    - comment gérer correctement mon magasin ?
+#    - je veux de l'aide pour optimiser la gestion de mon magasin
+#    - je suis nouveau ici, comment gérer un magasin ?
+#    - quels sont les conseils pour une gestion efficace de magasin ?
+#    - j'ai besoin d'aide pour comprendre la gestion de magasin
+#    - des recommandations pour la gestion de magasin ?
+#    - je cherche des astuces pour gérer un magasin
+#    - je suis perdu dans la gestion de mon magasin, pouvez-vous aider ?
+#    - comment être plus efficace dans la gestion de magasin ?
+#    - je veux des conseils professionnels pour gérer mon magasin
+#    - aidez-moi à améliorer la gestion de mon magasin
+#    - je cherche de l'aide pour gérer efficacement mon magasin
+#    - guide pour la gestion optimale de magasin
+#    - comment gérer mon magasin plus stratégiquement ?
+#    - je veux des idées pour améliorer la gestion de mon magasin
+#    - des solutions pour la gestion facile de magasin
+#    - je veux apprendre à mieux gérer mon magasin
+#    - stratégies pour une gestion efficace de magasin
+#    - je voudrais des conseils sur la gestion de magasin
+#    - conseils pour une gestion de magasin sans stress
+#    - je cherche des méthodes pour gérer mon magasin
+#    - je suis à la recherche d'assistance pour la gestion de magasin
+#    - comment puis-je gérer mon magasin plus intelligemment ?
+#    - je veux des astuces pour une gestion de magasin facile
+#    - j'ai besoin d'aide pour gérer mon magasin de manière optimale
+#    - je cherche des conseils pour une meilleure gestion de magasin
+#
+#- intent: change_store_status
+#  examples: |
+#    - Je dois changer le statut de mon magasin
+#    - Comment modifier l'étape de mon magasin ?
+#    - Changer le statut actuel de mon magasin
+#    - Passer mon magasin à une autre étape
+#    - Modifier l'état de fonctionnement du magasin
+#    - Je veux changer le statut de mon magasin
+#    - Mettre à jour le statut de mon magasin
+#    - Comment faire évoluer le statut de mon magasin ?
+#    - Passer mon magasin en mode fermeture temporaire
+#    - Changer le statut de mon magasin en rénovation
+#    - Comment mettre mon magasin en mode agrandissement ?
+#    - Je veux passer mon magasin en pré-ouverture
+#    - Modifier l'étape actuelle de mon magasin
+#    - Comment passer mon magasin en mode liquidation ?
+#    - Changer l'état de mon magasin en travaux
+#    - Je dois mettre à jour l'étape de mon magasin
+#    - Passer mon magasin à l'étape suivante
+#    - Comment changer le statut opérationnel de mon magasin ?
+#    - Modifier le statut de mon magasin pour maintenance
+#    - Changer le niveau de fonctionnement de mon magasin
+#    - Actualiser le statut de mon magasin
+#    - Comment changer l'état de mon magasin ?
+#    - Mettre mon magasin en statut de fermeture
+#    - Je veux changer l'étape de mon magasin en transfert
+#    - Changer le statut de mon magasin en ouvert
+#    - Comment passer mon magasin en statut fermé ?
+#    - Modifier le statut de mon magasin en ouverture prochaine
+#    - Je souhaite changer le statut de mon magasin en réouverture
+#    - Mettre à jour l'étape de mon magasin en liquidation avant travaux
+#    - Changer le statut de mon magasin en fermé pour travaux
+#    - Comment faire passer mon magasin en statut actif ?
+#    - Modifier le statut de mon magasin en inactif
+#    - Passer le statut de mon magasin en rénovation complète
+#    - Je dois changer l'étape de mon magasin en pré-fermeture
+#    - Mettre à jour l'état de mon magasin en ouvert pour travaux
+#    - Comment changer le statut de mon magasin en fermé temporairement ?
+#    - Changer le statut de mon magasin en ouverture imminente
+#    - Passer mon magasin au statut de fermeture définitive
+#    - Je veux modifier le statut de mon magasin en préparation d'ouverture
+#    - Mettre à jour le statut de mon magasin pour une réouverture après travaux
+#    - Comment modifier l'état de mon magasin en préparation de fermeture ?
+#    - Changer le statut de mon magasin en phase de liquidation
+#    - Passer le statut de mon magasin en étape de finalisation
+#    - Je veux changer l'étape de mon magasin en phase de démarrage
+#    - Modifier l'état de mon magasin en phase de clôture
+#
+#- intent: add_store_event
+#  examples: |
+#    - Comment puis-je programmer un événement pour mon magasin ?
+#    - Ajouter un événement de fermeture temporaire à mon magasin
+#    - Je souhaite créer un événement d'agrandissement pour un magasin
+#    - Planifier un événement de transfert pour mon magasin
+#    - Organiser un événement de liquidation avant travaux dans mon magasin
+#    - Programmer un événement spécial pour mon magasin
+#    - Comment créer un événement pour un magasin sur votre plateforme ?
+#    - J'aimerais ajouter un événement de rénovation pour mon magasin
+#    - Mettre en place un événement de fermeture définitive pour un magasin
+#    - Planifier une ouverture prochaine en tant qu'événement pour mon magasin
+#    - Ajouter un événement de vente spéciale dans mon magasin
+#    - Comment programmer un événement de réouverture pour mon magasin ?
+#    - Organiser un événement promotionnel pour mon magasin
+#    - Je veux créer un événement pour une occasion spéciale dans mon magasin
+#    - Planifier un événement de fermeture saisonnière pour mon magasin
+#    - Ajouter un événement pour célébrer l'anniversaire de mon magasin
+#    - Comment mettre en place un événement de liquidation totale pour mon magasin ?
+#    - Programmer un événement pour le réaménagement de mon magasin
+#    - Créer un événement pour la période de soldes dans mon magasin
+#    - Je souhaite ajouter un événement pour une vente flash dans mon magasin
+#    - Organiser un événement pour le lancement d'un nouveau produit dans mon magasin
+#    - Ajouter un événement pour une journée portes ouvertes dans mon magasin
+#    - Comment programmer un événement pour une démonstration de produit dans mon magasin ?
+#    - Planifier un événement pour une offre spéciale de fidélité dans mon magasin
+#    - Créer un événement pour une formation ou un atelier dans mon magasin
+#    - Ajouter un événement pour une opération de charité organisée par mon magasin
+#    - Organiser un événement pour une collaboration spéciale dans mon magasin
+#    - Je veux créer un événement pour un partenariat avec une autre marque dans mon magasin
+#    - Planifier un événement pour une exposition temporaire dans mon magasin
+#    - Ajouter un événement pour une rencontre avec des clients VIP dans mon magasin
+#    - Comment organiser un événement pour une séance de dédicaces dans mon magasin ?
+#    - Programmer un événement pour une nocturne spéciale dans mon magasin
+#    - Créer un événement pour une séance de photos dans mon magasin
+#    - Ajouter un événement pour une célébration thématique dans mon magasin
+#    - Organiser un événement pour une dégustation de produits dans mon magasin
+#    - Planifier un événement pour une journée de remises spéciales dans mon magasin
+#    - Comment ajouter un événement pour une série de conférences dans mon magasin ?
+#    - Je veux créer un événement pour une collecte de fonds dans mon magasin
+#    - Ajouter un événement pour une journée de sensibilisation dans mon magasin
+#    - Organiser un événement pour une activité communautaire dans mon magasin
+#    - Planifier un événement pour une opération de nettoyage dans mon magasin
+#    - Créer un événement pour une campagne de recyclage dans mon magasin
+#    - Ajouter un événement pour une initiative écologique dans mon magasin
+#    - Comment programmer un événement pour une campagne de sensibilisation dans mon magasin ?
+#    - Organiser un événement pour une exposition d'art dans mon magasin
+#    - Je veux créer un événement pour une performance musicale dans mon magasin
+#    - Planifier un événement pour une soirée à thème dans mon magasin
+#    - Ajouter un événement pour une compétition ou un tournoi dans mon magasin
+#    - Comment mettre en place un événement pour une vente aux enchères dans mon magasin ?
+#    - Organiser un événement pour une séance de dégustation dans mon magasin
+#    - Créer un événement pour une journée de sensibilisation à la santé dans mon magasin
+#    - Ajouter un événement pour une opération de dons dans mon magasin
+#    - Planifier un événement pour une collecte de vêtements dans mon magasin
+#    - Je veux créer un événement pour une journée de formation du personnel dans mon magasin
+#    - Comment organiser un événement pour une présentation de mode dans mon magasin ?
+#    - Ajouter un événement pour une session de conseil en style dans mon magasin
+#    - Programmer un événement pour une démonstration de cuisine dans mon magasin
+#    - Organiser un événement pour une séance de conseil en décoration dans mon magasin
+#    - Créer un événement pour une séance d'information sur les produits dans mon magasin
+#    - Ajouter un événement pour une session de réseautage d'affaires dans mon magasin
+#    - Planifier un événement pour une conférence sur un sujet d'actualité dans mon magasin
+#    - Je veux créer un événement pour une rencontre avec un expert dans mon magasin
+#    - Comment organiser un événement pour une séance de conseil en investissement dans mon magasin ?
+#    - Ajouter un événement pour une présentation de technologie dans mon magasin
+#    - Programmer un événement pour une démonstration de produits électroniques dans mon magasin
+#    - Organiser un événement pour une séance de dégustation de vins dans mon magasin
+#    - Créer un événement pour une séance de formation sur les produits de beauté dans mon magasin
+#    - Ajouter un événement pour une présentation de livre dans mon magasin
+#    - Planifier un événement pour une rencontre avec un auteur dans mon magasin
+#    - Comment créer un événement pour une séance de dédicaces d'auteur dans mon magasin ?
+#    - Je veux organiser un événement pour une journée d'activités familiales dans mon magasin
+#    - Ajouter un événement pour une journée de jeux pour enfants dans mon magasin
+#    - Programmer un événement pour une séance de yoga ou de méditation dans mon magasin
+#    - Organiser un événement pour une session de fitness ou de bien-être dans mon magasin
+#    - Créer un événement pour une journée de sensibilisation au bien-être mental dans mon magasin
+#    - Ajouter un événement pour une séance de relaxation ou de spa dans mon magasin
+#    - Planifier un événement pour une journée de soins personnels dans mon magasin
+#    - Comment organiser un événement pour une journée de santé et de forme physique dans mon magasin ?
+#    - Je veux créer un événement pour une séance de conseil en nutrition dans mon magasin
+#    - Ajouter un événement pour une présentation de produits de santé dans mon magasin
+#    - Programmer un événement pour une séance d'information sur la nutrition dans mon magasin
+#    - Organiser un événement pour une démonstration de produits de soins de la peau dans mon magasin
+#    - Créer un événement pour une journée de beauté et de soins dans mon magasin
+#    - Ajouter un événement pour une séance de conseil en maquillage dans mon magasin
+#    - Planifier un événement pour une séance de relooking dans mon magasin
+#    - Comment mettre en place un événement pour une séance de coiffure ou de stylisme dans mon magasin ?
+#    - Organiser un événement pour une journée de mode et de tendances dans mon magasin
+#    - Je veux créer un événement pour une présentation de collection de mode dans mon magasin
+#    - Ajouter un événement pour une séance de conseil en style vestimentaire dans mon magasin
+#    - Programmer un événement pour une rencontre avec un styliste de mode dans mon magasin
+#    - Organiser un événement pour une séance de conseil en accessoires de mode dans mon magasin
+#    - Créer un événement pour une présentation de bijoux ou d'accessoires dans mon magasin
+#    - Ajouter un événement pour une démonstration de produits de luxe dans mon magasin
+#
+#- intent: ask_for_help
+#  examples: |
+#    - Bonjour, j'ai besoin d'aide.
+#    - Pourriez-vous m'aider s'il vous plaît ?
+#    - J'ai une question, pouvez-vous m'assister ?
+#    - J'ai un problème et j'ai besoin d'aide.
+#    - Salut, je suis un peu perdu, pouvez-vous m'aider ?
+#    - J'ai besoin d'un coup de main avec votre logiciel.
+#    - Comment puis-je obtenir de l'aide ici ?
+#    - Je suis nouveau, pouvez-vous m'aider ?
+#    - J'ai besoin d'informations supplémentaires, pouvez-vous m'aider ?
+#    - J'ai quelques questions, pouvez-vous m'assister ?
+#    - Est-ce que quelqu'un peut m'aider ?
+#    - J'ai du mal à comprendre comment cela fonctionne, pouvez-vous m'aider ?
+#    - Pouvez-vous m'aider à naviguer dans votre système ?
+#    - Je requiers de l'assistance, s'il vous plaît.
+#    - Besoin d'aide avec une fonctionnalité.
+#    - Je suis coincé, pouvez-vous m'aider ?
+#    - J'ai besoin d'aide pour comprendre quelque chose.
+#    - Comment puis-je obtenir de l'aide sur cette plateforme ?
+#    - J'ai besoin d'aide pour utiliser votre application.
+#    - Pouvez-vous m'aider à résoudre un problème ?
+#
+#- intent: utter_ask_which_module
+#  examples: |
+#    - J'ai besoin d'aide sur le module maintenance
+#    - Pourriez-vous m'aider avec le module projet ?
+#    - Assistance requise pour le module référentiel
+#    - Comment utiliser le module audit ?
+#    - Besoin d'informations sur le module baux
+#    - Comment accéder aux fonctionnalités du module référentiel ?
+#    - Aide pour naviguer dans le module maintenance
+#    - Expliquez-moi comment travailler avec le module projet
+#    - Des directives pour le module audit, s'il vous plaît
+#    - Comment puis-je gérer le module baux ?
+#    - J'ai des questions sur le module référentiel
+#    - Pouvez-vous me montrer comment utiliser le module maintenance ?
+#    - Besoin d'assistance sur le module projet
+#    - Comment effectuer des tâches dans le module audit ?
+#    - Guide pour débuter avec le module baux
+#    - Conseils d'utilisation pour le module référentiel
+#    - Comment naviguer dans le module maintenance ?
+#    - Assistance pour les fonctionnalités du module projet
+#    - J'ai besoin d'aide pour comprendre le module audit
+#    - Comment gérer les tâches dans le module baux ?
+#
+#- intent: ask_for_help_on_module
+#  examples: |
+#    - J'ai besoin d'aide avec le module [maintenance](module)
+#    - Pouvez-vous m'aider avec le module [projet](module) ?
+#    - Comment utiliser le module [référentiel](module) ?
+#    - Aide pour le module [audit](module)
+#    - Des informations sur le module [baux](module), s'il vous plaît
+#
+#- intent: ask_general_question
+#  examples: |
+#    - Pourriez-vous m'assister ?
+#    - J'ai un problème
+#    - Pouvez-vous m'offrir de l'assistance ?
+#    - J'ai besoin d'un peu d'aide ici
+#    - J'ai une requête
+#    - J'aurais une question à poser
+#    - Pouvez-vous me fournir des renseignements ?
+#    - J'ai besoin de votre aide s'il vous plaît
+#    - J'ai une interrogation
+#    - J'ai besoin d'informations supplémentaires
+#    - Pouvez-vous m'aider avec quelque chose ?
+#    - J'ai besoin d'aide avec une tâche
+#    - J'ai une préoccupation
+#    - Pouvez-vous m'expliquer quelque chose ?
+#    - J'ai un souci
+#    - J'ai une petite question
+#    - J'ai besoin de clarification
+#    - J'ai une question à poser
+#    - J'ai besoin de conseils
+#    - Pouvez-vous me guider ?
+#    - J'ai besoin d'explications
+#    - J'ai une demande
+#    - J'ai besoin d'informations sur un sujet
+#    - Je me demande si vous pouvez m'aider
+#    - J'ai un doute
+#    - Pouvez-vous m'apporter de l'aide ?
+#    - J'ai une enquête
+#    - J'ai besoin d'un éclaircissement
+#    - J'ai une question rapide
+#    - J'ai besoin de détails
+#    - Pouvez-vous me renseigner ?
+#    - J'ai besoin de savoir quelque chose
+#    - J'ai une question importante
+#    - J'ai besoin d'aide pour comprendre quelque chose
+#    - J'ai besoin d'assistance pour une tâche
+#    - Pouvez-vous m'aider rapidement ?
+#    - J'ai une question technique
+#    - J'ai besoin d'informations sur votre service
+#    - J'ai une question sur un produit
+#    - J'ai besoin d'aide pour résoudre un problème
+#    - J'ai une question sur une fonctionnalité
+#    - J'ai besoin de comprendre mieux quelque chose
+#    - J'ai une question sur votre entreprise
+#    - J'ai besoin d'aide pour utiliser votre produit
+#    - J'ai une interrogation sur un service
+#    - J'ai besoin d'aide avec votre application
+#    - J'ai une question sur un processus
+#    - J'ai besoin de savoir comment faire quelque chose
+#    - J'ai une question sur une procédure
+#    - J'ai besoin d'aide pour naviguer sur votre site
 
 - intent: ask_database_value
   examples: |

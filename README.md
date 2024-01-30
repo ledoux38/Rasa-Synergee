@@ -23,6 +23,9 @@ voir les possibilités de rasa
 
 2- python create_database.py
 
+# Activer les actions
+1- ```rasa run actions```
+
 # Lancement du serveur pour les images:
 1- ```python -m http.server```
 
